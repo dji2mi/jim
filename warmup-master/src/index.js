@@ -1,7 +1,7 @@
 module.exports = function warmup(temperature) {
-  function convert(celsius) {
+  function convert(temperature) {
     
-    var fahrenheit = (celsius * (9/5)) + 32;
+    var fahrenheit = (temperature * (9/5)) + 32;
   
     
     if ( typeof fahrenheit !== 'undefined' ) {
@@ -11,7 +11,7 @@ module.exports = function warmup(temperature) {
     }
   }
   
-  
-  convert(30);
+  convert(temperature);
+
 };
 
